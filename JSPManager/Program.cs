@@ -19,6 +19,18 @@ namespace JSPManager {
             }
             var config = await ConfigUtils.ParseConfigAsync();
 
+            //Database.InitializeDatabase();
+
+            var member1 = new Member
+            {
+                Username = "BadSpider1",
+                DiscordID = 12345,
+                Group = "it",
+                Email = "aaaaaaaa",
+                Phone = "waaaaa"
+            };
+            Database.AddMember(member1);
+            Database.RemoveMember(12345);
 
             _client = new DiscordSocketClient();
             _client.Log += Logging.Log;

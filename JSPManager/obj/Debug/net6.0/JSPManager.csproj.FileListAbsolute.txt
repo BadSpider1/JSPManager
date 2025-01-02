@@ -27,3 +27,4 @@ C:\Users\Bonin\Desktop\Repos\JSPManager\JSPManager\JSPManager\obj\Debug\net6.0\r
 C:\Users\Bonin\Desktop\Repos\JSPManager\JSPManager\JSPManager\obj\Debug\net6.0\JSPManager.pdb
 C:\Users\Bonin\Desktop\Repos\JSPManager\JSPManager\JSPManager\obj\Debug\net6.0\JSPManager.genruntimeconfig.cache
 C:\Users\Bonin\Desktop\Repos\JSPManager\JSPManager\JSPManager\obj\Debug\net6.0\ref\JSPManager.dll
+C:\Users\Bonin\Desktop\Repos\JSPManager\JSPManager\JSPManager\bin\Debug\net6.0\LiteDB.dll
