@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Text.Json;
 using Discord;
 using Discord.WebSocket;
@@ -14,16 +14,15 @@ namespace JSPManager {
 
             if (!File.Exists("config.json"))
             {
-                ConfigUtils.CreateConfig();
+                await ConfigUtils.CreateConfigAsync();
                 return;
             }
-            string _config = await File.ReadAllTextAsync("config.json");
-            var config = JsonSerializer.Deserialize<Config>(_config);
-            Logging.LogInfo("Config successfully parsed");
+            var config = await ConfigUtils.ParseConfigAsync();
+
 
             _client = new DiscordSocketClient();
             _client.Log += Logging.Log;
-            await _client.LoginAsync(TokenType.Bot, config.token);
+            await _client.LoginAsync(TokenType.Bot, config.Token);
             await _client.StartAsync();
             await Task.Delay(-1);
         }
