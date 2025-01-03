@@ -1,2 +1,0 @@
-C:\Users\Bonin\Desktop\Repos\JSPManager\JSPManager\JSPManager\bin\Release\net6.0\publish\linux-x64\JSPManager.pdb
-C:\Users\Bonin\Desktop\Repos\JSPManager\JSPManager\JSPManager\bin\Release\net6.0\publish\linux-x64\JSPManager
