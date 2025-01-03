@@ -41,9 +41,18 @@ namespace JSPManager
                 } 
                 else
                 {
+                    Logging.LogInfo("Member not found: " + discordId);
                     return false;
                 }
                 
+            }
+        }
+        public static List<Member> ListMembers() 
+        {
+            using (var db = new LiteDatabase("db.sql"))
+            {
+                var members = db.GetCollection<Member>("members");
+                return members.FindAll().ToList();
             }
         }
     }

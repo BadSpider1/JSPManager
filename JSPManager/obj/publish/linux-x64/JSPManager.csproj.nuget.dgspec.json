@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[3.17.0, )"
             },
+            "LiteDB": {
+              "target": "Package",
+              "version": "[5.0.21, )"
+            },
             "Microsoft.NET.ILLink.Analyzers": {
               "suppressParent": "All",
               "target": "Package",

@@ -19,18 +19,16 @@ namespace JSPManager {
             }
             var config = await ConfigUtils.ParseConfigAsync();
 
-            //Database.InitializeDatabase();
-
-            var member1 = new Member
+            config.Groups.ForEach(delegate (GroupConfig group)
             {
-                Username = "BadSpider1",
-                DiscordID = 12345,
-                Group = "it",
-                Email = "aaaaaaaa",
-                Phone = "waaaaa"
-            };
-            Database.AddMember(member1);
-            Database.RemoveMember(12345);
+                Logging.LogInfo("Group found: " + group.GroupName + " With chairmen|member role id : " + group.ChairmenRole + "|" + group.MemberRole);
+            });
+            int exuser = 1234;
+            bool isAdmin = config.Admins.Exists(AdminConfig => AdminConfig.Admin == exuser);
+            if (config.Admins.Exists(AdminConfig => AdminConfig.Admin == exuser))
+            {
+                Logging.LogInfo("User is admin");
+            }
 
             _client = new DiscordSocketClient();
             _client.Log += Logging.Log;

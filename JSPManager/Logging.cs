@@ -9,10 +9,9 @@ namespace JSPManager {
             Console.WriteLine("[Discord.NET] - " + msg.ToString());
             return Task.CompletedTask;
         }
-        public static Task LogInfo(string msg)
+        public static void LogInfo(string msg)
         {
             Console.WriteLine("[INFO] - " + DateTime.Now.ToString("HH:mm:ss ") + msg);
-            return Task.CompletedTask;
         }
     }
 
