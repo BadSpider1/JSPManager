@@ -14,3 +14,32 @@ JSPManager is a C# bot designed to manage members of the **Jihočeský Studentsk
 Before you begin, ensure you have the following installed:
 
 - The executable once i actually put it in realeases should be self-contained
+
+## Config
+```json
+{
+  "Token": "insert-your-token",
+  "Groups": [
+    {
+      "GroupNameHuman": "Výbor pro elektrotechniku",
+      "GroupName": "example_group",
+      "ChairmenRole": 123456789,
+      "MemberRole": 123456789
+    },
+    {
+      "GroupNameHuman": "Výbor pro c#",
+      "GroupName": "example_group2",
+      "ChairmenRole": 123456789,
+      "MemberRole": 123456789
+    }
+  ],
+  "Admins": [
+    {
+      "admin": 12345
+    },
+    {
+      "admin": 123456789
+    }
+  ]
+}
+```
